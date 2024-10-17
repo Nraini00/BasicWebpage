@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 20%; /* Adjusted width to fit five columns */
+    padding: 0 10px;
+}
+  
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0; /* Removed negative margin */
+    overflow: hidden; /* Clear floats */
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* This adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    /*background-color: #b8d6ebf7;*/
+    background-image: url("img/bg.PNG");
+    transition: transform .2s; /* Smooth transition for the zoom effect */
+}
+  
+/* Image styling and zoom effect */
+.card img {
+    width: 120px; /* Maintain image width */
+    height: 120px; /* Maintain image height */
+    transition: transform .3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Zoom effect on hover */
+.card:hover img {
+    transform: scale(1.5); /* Scale up the image by 20% */
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+button {
+    /*background-color: #91c8eff7;*/
+    background-image: url("img/buttonbg.PNG");
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+}

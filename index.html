@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="slider.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="card.css">
+        <link rel="stylesheet" href="main.css">
+        
+        <title>Cupcake Sales</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        
+
+        
+    </head>
+    <body style="background-color: #f9f8de;" >
+            <!-- Welcome Text with Blinking Effect -->
+    <!-- <h1 style="text-align: center; padding-top: 1px;"><p class="blinking-text">&#128165;Welcome to Aini's Cupcake Sales! &#128165;</p></h1>-->
+        <!--<center><img src="img/logocomp.png" style="height: 20%;  margin-bottom: 5px;"></center><center><img src="img/welcome2.PNG" style="height: 20%; width: 90%;"></center>-->
+    <!-- Menu Part -->
+    <div class="navbar">
+      <img src="img/logocomp.png" class="logo" alt="Company Logo">
+      <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="#news">News</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="icons">
+          <span class="bell">🔔</span>
+          <span class="cart">🛒</span>
+      </div>
+  </div>
+  
+
+       <!-- Slider -->
+       <br>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="slider-wrapper">
+        <div class="slider-content">
+          <img src="img/banner1.png">
+         
+        </div>
+      </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="slider-wrapper">
+        <div class="slider-content">
+          <img src="img/banner2.png" >
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="slider-wrapper">
+        <div class="slider-content">
+          <img src="img/banner3.png" >
+          
+        </div>
+      </div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <hr class="long-line">
+
+<h1 style="text-align: center; color: #003859;  font-family: 'Brush Script MT', cursive; animation: wave 2s infinite;">Menu List and Price</h1>
+<!-- menu list div-->
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <p><img src="img/strawberry.png" style="width: 120px; height: 120px;"></p>
+        <p style="font-weight: bold;">Strawberry Sunset</p>
+        <p>RM 7.50</p>
+        <p><button onclick="addToCart()">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <p><img src="img/logo.png" style="width: 120px; height: 120px;"></p>
+        <p style="font-weight: bold;">Tiramisu Paradise</p>
+        <p>RM 8.00</p>
+        <p><button onclick="addToCart()">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <p><img src="img/chocolate1.png" style="width: 120px; height: 120px;"></p>
+        <p style="font-weight: bold;">Chocolate Ice Cream</p>
+        <p>RM 10.50</p>
+        <p><button onclick="addToCart()">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <p><img src="img/redvelvet3.png" style="width: 120px; height: 120px;"></p>
+        <p style="font-weight: bold;">Red Velvet I Love You!</p>
+        <p>RM 11.50</p>
+        <p><button onclick="addToCart()">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+          <p><img src="img/lemon.png" style="width: 120px; height: 120px;"></p>
+          <p style="font-weight: bold;">Lemon Heartbreak</p>
+          <p>RM 7.00</p>
+          <p><button onclick="addToCart()">Add to Cart</button></p>
+        </div>
+      </div>
+
+  </div>
+
+  <hr class="long-line">
+<!-- Our Location 
+
+<table>
+    <tr>
+        <th style="background-color: aliceblue;">Shop Location</th>
+        <td><img src="img/maps.PNG" style="width: 50%; height: 50%;"></td>
+    </tr>
+
+    <tr>
+        <th style="background-color: aliceblue;">Shop Address</th>
+        <td>No 9 Jalan Bukit Keramat, 54000 Kuala Lumpur</td>
+    </tr>
+</table>-->
+<h1 style="text-align: center; color: #003859;  font-family: 'Brush Script MT', cursive; animation: wave 2s infinite;">About Us</h1>
+
+<div class="row1">
+  <div class="column1" style="background-image: url(img/menu.PNG);">
+    <h2 style="font-family: 'Brush Script MT', cursive; color: #003859; text-align: center;">About Aini Borcelle</h2>
+    <p>“You never cease to amaze me. You’re just too damn talented.  
+      Elevete desserts are simply delicious and made with so much love!” – <b>Aisya</b></p>
+
+     <p>“I am so spoilt! These are the best macarons I’ve tasted! 
+      Soft and Chewy salted caramel indulgence”. – <b>Andrea</b></p>
+
+      <p>Cupcake takes the cake!
+
+        Baked fresh & made to order, with awesome designs and themes suitable for any occasions, 
+        celebrations & festivities.</p>
+    <p><center><img src="img/cupcake.PNG" style="width:180px; height: 105px;"></center></p>
+  </div>
+
+  <div class="column1" style="background-image: url(img/menu.PNG);">
+    <h2 style="font-family: 'Brush Script MT', cursive; color: #003859; text-align: center;">Our History</h2>
+    <p><b>Aini Borcelle</b> aims to deliver the most <b>delectable desserts the culinary world has to offer</b>, 
+      which is why we ensure that each and every order that leaves our kitchen, 
+      is guaranteed to both visually entice and excite any flavour palate.</p>
+
+    <p>The name, <b>Aini Borcelle,</b> was derived from the desire to take modern day desserts and put them on a 
+      pedestal of their own, hence, the non-stop pursuit for new methods and combinations of ingredients to 
+      create sweets that would catapult taste buds to new heights.</p>
+
+      <p><center><img src="img/logocomp.png" style="width:130px; height: 110px;"></center></p>
+  </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <br><br>
+<footer style="border: 1px solid; background-color: #91c8eff7;">
+    <h4 style="text-align: center; font-family: 'Brush Script MT', cursive;">Copyright by Siti Nur Aini</h4> 
+</footer>
+
+<!-- Java Script-->
+  <script>
+
+    //slideshow
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // small pop up
+    function addToCart() {
+            alert('Added to Cart');
+        }
+    
+    // Hover to the top
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  
+
+
+    </body>
+</html>

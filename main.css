@@ -1,0 +1,126 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+       }
+
+.long-line {
+   border: 0;
+   height: 2px; /* Thickness of the line */
+   background-color: black; /* Color of the line */
+   width: 100%; /* Full width */
+   margin: 20px 0; /* Optional: Add some space above and below */
+       }
+
+
+.blinking-text {
+   animation: blink-animation 1s steps(5, start) infinite;
+   color: rgb(0, 0, 0); /* Optional: Set the text color */
+       }
+
+/* table css*/
+table {
+   width: 80%; /* Adjust width as needed */
+   margin: 20px auto; /* Center the table */
+   border-collapse: collapse; /* Collapse borders for a cleaner look */
+   font-family: Arial, sans-serif; /* Change font */
+}
+
+th, td {
+   border: 1px solid #ddd; /* Light border for cells */
+   padding: 12px; /* Add padding for better readability */
+   text-align: left; /* Align text to the left */
+}
+
+th {
+   /*background-color: #88e2f0;  Light gray background for header */
+   background-image: url(img/bg.PNG);
+   color: #333; /* Darker text color for contrast */
+   font-weight: bold; /* Bold text for headers */
+}
+
+tr:nth-child(even) {
+   background-color: #f9f9f9; /* Alternating row colors */
+}
+
+tr:hover {
+   /*background-color: #88e2f0;  Highlight row on hover */
+   background-image: url(img/bg.PNG);
+}
+
+img {
+   max-width: 100%; /* Ensure images fit within their cells */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Rounded corners for images */
+}
+
+td {
+   font-size: 16px; /* Adjust font size for readability */
+}
+
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: rgb(165, 217, 227); /* Set a background color */
+color: black; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+   }
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+   }
+
+
+   /* second div */
+   * {
+    box-sizing: border-box;
+  }
+  
+  .row1 {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    height: 370px; /* Should be removed. Only for demonstration */
+    
+  }
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+}
+
+  /* Center the map container */
+.map-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    width: 100%; /* Full width */
+    height: 300px; /* Adjust the height for better alignment */
+    margin-top: 0; /* No space above the map container */
+}
+
+/* Set a maximum width for the map */
+iframe {
+    max-width: 100%; /* Make sure the map is responsive */
+    border: 0; /* Remove the border */
+}
+
+/* Style for the heading */
+h2 {
+    text-align: center; /* Center text */
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    margin-bottom: 10px; /* Adjust space below the heading */
+    color: #003859;
+}

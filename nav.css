@@ -1,0 +1,62 @@
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-image: url(img/menu.PNG);
+  /*background-color: #3087b6; */
+  font-family: 'Brush Script MT', cursive; /* Apply cursive font */
+  display: flex;
+  justify-content: space-between; /* Space between logo, menu, and icons */
+  align-items: center;
+  width: 100%; /* Full width */
+  padding: 0 10px; /* Add padding to the left and right */
+}
+
+/* Style for the logo */
+.logo {
+  height: 30%; 
+  max-height: 60px; /* Limit the maximum height */
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Center the menu */
+.menu {
+  display: flex;
+  justify-content: center; /* Center the menu items */
+  flex-grow: 1; /* Allow the menu to take up remaining space */
+}
+
+/* Links inside the navbar */
+.navbar a {
+display: inline-block;
+color: #000000;
+font-weight: bold;
+text-align: center;
+
+padding: 14px 16px;
+text-decoration: none;
+margin: 0 15px; /* Add some space between menu items */
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+background: antiquewhite;
+color: black;
+}
+
+/* Style for notification and cart icons */
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.bell, .cart {
+  color: #000000;
+  font-size: 20px; /* Adjust the size of the icons */
+  margin-left: 20px; /* Add space between icons */
+}
+
+/* Main content */
+.main {
+margin-top: 0; /* Remove the top margin */
+}
